@@ -62,15 +62,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <div 
-        style={{ 
-          display: 'flex', 
-          alignItems: 'flex-start', 
-          justifyContent: 'space-between', 
-          gap: '2rem',
-          marginBottom: '2rem' 
-        }}
-      >
+      <div className="filter-row">
         <SearchBar />
         <SortDropdown />
       </div>

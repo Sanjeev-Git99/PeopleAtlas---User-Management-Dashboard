@@ -86,9 +86,8 @@ const UserDetailPage = () => {
         boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
       }}>
         {/* Top Header Section */}
-        <div style={{ 
+        <div className="detail-banner" style={{ 
           backgroundColor: '#10b981', // Solid green/teal matching the image
-          padding: '2.5rem 3rem',
           color: 'white'
         }}>
           <h2 style={{ fontSize: '1.75rem', fontWeight: 700, margin: 0, marginBottom: '0.25rem' }}>
@@ -100,8 +99,8 @@ const UserDetailPage = () => {
         </div>
 
         {/* Details Section */}
-        <div style={{ padding: '2.5rem 3rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem 2rem' }}>
+        <div className="detail-body">
+          <div className="detail-grid">
             
             <DetailItem label="PHONE" value={user.phone} />
             <DetailItem label="CITY" value={user.address.city} />

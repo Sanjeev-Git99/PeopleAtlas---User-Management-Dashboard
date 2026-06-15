@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -14,10 +15,12 @@ const Header = () => {
       zIndex: 50
     }}>
       <div className="container flex items-center justify-between">
-        <h1 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>
-          <span style={{ color: 'var(--text-primary)' }}>People</span>
-          <span style={{ color: '#0d9488' }}>Atlas</span>
-        </h1>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <h1 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>
+            <span style={{ color: 'var(--text-primary)' }}>People</span>
+            <span style={{ color: '#0d9488' }}>Atlas</span>
+          </h1>
+        </Link>
         
         <button 
           onClick={toggleTheme} 
