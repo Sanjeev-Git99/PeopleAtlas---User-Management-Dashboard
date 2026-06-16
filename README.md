@@ -51,8 +51,7 @@ Follow these steps to run the application locally on your machine:
 
 ## 🌐 Live Deployment
 
-*(If deployed, replace this section with the actual URL. e.g., `https://your-app-name.vercel.app`)*
-
+https://people-atlas-user-management-dashbo.vercel.app/
 ## 📂 Project Structure
 
 ```text
